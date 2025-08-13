@@ -81,6 +81,19 @@
   aside {
     top: 236em;
   }
+
+  .preamble p:nth-child(4) {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    z-index: 2;
+    background: rgb(241 91 49);
+    position: absolute;
+    width: 19.9%;
+    top: 50em;
+    right: 0%;
+    padding: 10em 1em 20em 1em;
+    color: white;
+  }
 }
 
 @media screen and (max-width: 1070px) {

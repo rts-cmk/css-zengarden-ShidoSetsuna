@@ -13,6 +13,7 @@ a:active {
 body {
   line-height: 1.5;
   background: #f6efe5;
+  transition: all 1s;
 }
 
 h3 {
