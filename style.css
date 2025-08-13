@@ -1,194 +1,472 @@
-/* css Zen Garden default style v1.02 */
-/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
-
-/* This file based on 'Tranquille' by Dave Shea */
-/* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
-/* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
-
-/* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
-
-
-/* basic elements */
-html {
-	margin: 0;
-	padding: 0;
-	}
-body { 
-	font: 75% georgia, sans-serif;
-	line-height: 1.88889;
-	color: #555753; 
-	background: #fff url(http://csszengarden.com/001/blossoms.jpg) no-repeat bottom right; 
-	margin: 0; 
-	padding: 0;
-	}
-p { 
-	margin-top: 0; 
-	text-align: justify;
-	}
-h3 { 
-	font: italic normal 1.4em georgia, sans-serif;
-	letter-spacing: 1px; 
-	margin-bottom: 0; 
-	color: #7D775C;
-	}
-a:link { 
-	font-weight: bold; 
-	text-decoration: none; 
-	color: #B7A5DF;
-	}
-a:visited { 
-	font-weight: bold; 
-	text-decoration: none; 
-	color: #D4CDDC;
-	}
-a:hover, a:focus, a:active { 
-	text-decoration: underline; 
-	color: #9685BA;
-	}
-abbr {
-	border-bottom: none;
-	}
-
-
-/* specific divs */
-.page-wrapper { 
-	background: url(http://csszengarden.com/001/zen-bg.jpg) no-repeat top left; 
-	padding: 0 175px 0 110px;  
-	margin: 0; 
-	position: relative;
-	}
-
-.intro { 
-	min-width: 470px;
-	width: 100%;
-	}
-
-header h1 { 
-	background: transparent url(http://csszengarden.com/001/h1.gif) no-repeat top left;
-	margin-top: 10px;
-	display: block;
-	width: 219px;
-	height: 87px;
-	float: left;
-
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	}
-header h2 { 
-	background: transparent url(http://csszengarden.com/001/h2.gif) no-repeat top left; 
-	margin-top: 58px; 
-	margin-bottom: 40px; 
-	width: 200px; 
-	height: 18px; 
-	float: right;
-
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	}
-header {
-	padding-top: 20px;
-	height: 87px;
+* {
+  font-family: "ff-meta-web-pro", sans-serif;
+  box-sizing: border-box;
 }
 
-.summary {
-	clear: both; 
-	margin: 20px 20px 20px 10px; 
-	width: 160px; 
-	float: left;
-	}
-.summary p {
-	font: italic 1.1em/2.2 georgia; 
-	text-align: center;
-	}
+a:hover,
+a:focus,
+a:active {
+  color: rgba(0, 0, 0, 0.4);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
 
-.preamble {
-	clear: right; 
-	padding: 0px 10px 0 10px;
-	}
-.supporting {	
-	padding-left: 10px; 
-	margin-bottom: 40px;
-	}
+body {
+  line-height: 1.5;
+  background: #f6efe5;
+}
 
-footer { 
-	text-align: center; 
-	}
-footer a:link, footer a:visited { 
-	margin-right: 20px; 
-	}
+h3 {
+  padding: 1em 0;
+  font-size: 150%;
+}
 
-.sidebar {
-	margin-left: 600px; 
-	position: absolute; 
-	top: 0; 
-	right: 0;
-	}
-.sidebar .wrapper { 
-	font: 10px verdana, sans-serif; 
-	background: transparent url(http://csszengarden.com/001/paper-bg.jpg) top left repeat-y; 
-	padding: 10px; 
-	margin-top: 150px; 
-	width: 130px; 
-	}
-.sidebar h3.select { 
-	background: transparent url(http://csszengarden.com/001/h3.gif) no-repeat top left; 
-	margin: 10px 0 5px 0; 
-	width: 97px; 
-	height: 16px; 
+p {
+  padding: 0.5em 0;
+}
 
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	}
-.sidebar h3.archives { 
-	background: transparent url(http://csszengarden.com/001/h5.gif) no-repeat top left; 
-	margin: 25px 0 5px 0; 
-	width:57px; 
-	height: 14px; 
+a {
+  color: white;
+  text-decoration: none;
+}
 
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	}
-.sidebar h3.resources { 
-	background: transparent url(http://csszengarden.com/001/h6.gif) no-repeat top left; 
-	margin: 25px 0 5px 0; 
-	width:63px; 
-	height: 10px; 
+.page-wrapper {
+  height: 0em;
+}
 
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	}
+.intro {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 
+.intro header {
+  background-color: #c879b2;
+  width: 40%;
+  height: 50em;
+  display: flex;
+  flex-direction: row-reverse;
+  color: white;
+}
 
-.sidebar ul {
-	margin: 0;
-	padding: 0;
-	}
-.sidebar li {
-	line-height: 1.3em; 
-	background: transparent url(http://csszengarden.com/001/cr1.gif) no-repeat top center; 
-	display: block; 
-	padding-top: 5px; 
-	margin-bottom: 5px;
-	list-style-type: none;
-	}
-.sidebar li a:link {
-	color: #988F5E;
-	}
-.sidebar li a:visited {
-	color: #B3AE94;
-	}
+.intro header h1 {
+  -webkit-transform: rotate(-90deg);
+  position: absolute;
+  left: -2em;
+  top: 5em;
+  font-size: 100%;
+}
 
+.intro header h2 {
+  background: #0d2c40 url(../img/icon-star.svg) no-repeat left bottom;
+  background-size: 100%;
+  width: 50%;
+  padding: 6em 0.6em 1em 0.6em;
+  font-size: 250%;
+}
 
-.extra1 {
-	background: transparent url(http://csszengarden.com/001/cr2.gif) top left no-repeat; 
-	position: absolute; 
-	top: 40px; 
-	right: 0; 
-	width: 148px; 
-	height: 110px;
-	}
+.intro .summary {
+  background-color: #c879b2;
+  width: 60%;
+  color: white;
+  padding: 15em 1em;
+  background: #c879b2 url(../img/icons-3-pack.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+.intro .summary p {
+  font-size: 1em;
+  line-height: 1.5;
+  max-width: 64%;
+  padding: 1em;
+  margin: 0;
+}
+
+.intro .preamble {
+  display: grid;
+  grid-template-columns: 55%; /* left column for p1+p2, right column for p3 */
+  grid-template-rows: auto auto; /* two rows for p1 and p2 */
+  background-color: #f6efe5;
+  padding: 10em 20%;
+}
+
+.preamble h3:nth-child(1) {
+  grid-column: 1; /* left column */
+  grid-row: 1;
+  padding: 0 0px 0.5em;
+  font-size: 150%;
+}
+
+.preamble p:nth-child(2) {
+  grid-column: 1; /* left column */
+  grid-row: 2;
+  padding: 1em 0px;
+}
+
+.preamble p:nth-child(3) {
+  grid-column: 1; /* left column */
+  grid-row: 3;
+}
+
+.preamble p:nth-child(4) {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  z-index: 2;
+  background: rgba(58, 195, 216, 0.8);
+  position: absolute;
+  width: 19.9%;
+  top: 50em;
+  right: 20%;
+  padding: 10em 1em 20em 1em;
+  color: white;
+}
+
+.main {
+  background: url(../img/mid-century-1.jpg) no-repeat center center;
+  background-size: cover;
+  padding: 20em 0;
+  position: relative;
+}
+
+.main .explanation {
+  background: #0d2c40 url(../img/icon-half.svg);
+  background-position: center right;
+  background-size: 40%;
+  background-repeat: no-repeat;
+  width: 40%;
+  padding: 2em 4em;
+  color: white;
+}
+
+.main .explanation h3 {
+  position: absolute;
+  -webkit-transform: rotate(-90deg);
+  color: white;
+  left: -4em;
+  top: 19em;
+}
+
+.main .explanation p {
+  padding: 0.5em 0;
+  width: 75%;
+}
+
+.main .participation {
+  background: #f6efe5;
+  position: absolute;
+  right: 40%;
+  width: 40%;
+  margin-top: 10em;
+  padding: 1em;
+}
+
+.main .benefits {
+  background: rgba(0, 188, 217, 0.8) url(../img/icon-circles.svg) no-repeat left
+    top;
+  background-size: 100%;
+  position: absolute;
+  right: 20%;
+  z-index: 3;
+  margin-left: 0;
+  width: 20%;
+  padding: 22em 1em 25em 1em;
+}
+
+.main .requirements {
+  position: absolute;
+  width: 60%;
+  top: 100em;
+  padding: 2em 2em;
+  display: grid;
+  right: 0;
+  margin-top: 0em;
+}
+
+.main .requirements h3 {
+  position: absolute;
+  -webkit-transform: rotate(-90deg);
+  color: rgb(0, 0, 0);
+  left: -5em;
+  top: 1em;
+  font-size: 248%;
+}
+
+.main .requirements::before {
+  content: "";
+  position: absolute;
+  background: url(../img/mid-century-2.jpg) no-repeat left center;
+  width: 60%;
+  height: 40em;
+  background-size: cover;
+  left: -60%;
+  margin-top: 1em;
+}
+
+.main .requirements p:nth-child(2) {
+  grid-column: 1;
+  padding-right: 2em;
+}
+
+.main .requirements p:nth-child(3) {
+  grid-column: 1;
+  grid-row: 2;
+  padding-right: 2em;
+}
+
+.main .requirements p:nth-child(4) {
+  grid-column: 2;
+  grid-row: 1;
+  height: fit-content;
+  padding-left: 2em;
+}
+
+.main .requirements p:nth-child(5) {
+  grid-column: 2;
+  height: fit-content;
+  grid-row: 2;
+  padding-left: 2em;
+}
+
+.main .requirements p:nth-child(6) {
+  grid-column: 2;
+  height: fit-content;
+  position: absolute;
+  bottom: 10%;
+  padding-left: 2em;
+}
+
+aside {
+  position: absolute;
+  top: 223em;
+  background-color: #c879b2;
+  width: 100%;
+}
+
+.design-selection h3 {
+  color: white;
+  width: 11em;
+  float: left;
+}
+
+footer {
+  display: grid;
+  width: 2em;
+  align-content: center;
+  justify-content: flex-start;
+  position: absolute;
+  bottom: 0;
+  padding: 1em;
+  color: black;
+}
+
+footer a {
+  color: black;
+  text-decoration: none;
+}
+
+.design-selection nav {
+  margin-top: 24em;
+}
+
+.design-selection nav ul {
+  display: grid;
+  height: 34em;
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  margin-top: 33em;
+}
+
+.design-selection nav ul li:nth-child(1)::before {
+  content: "1";
+  left: 2.5em;
+  top: 5.2em;
+  font-size: 7em;
+}
+
+.design-selection nav ul li:nth-child(1) {
+  grid-row: 1;
+  background-color: #0d2c40;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-decoration: none;
+  list-style: none;
+  margin-top: -33em;
+}
+
+.design-selection nav ul li:nth-child(2)::before {
+  content: "2";
+  left: 5.19em;
+  top: 5.2em;
+  font-size: 7em;
+}
+
+.design-selection nav ul li:nth-child(2) {
+  grid-row: 1;
+  background-color: #f15a30;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.design-selection nav ul li:nth-child(3)::before {
+  content: "3";
+  left: 7.55em;
+  top: 5.2em;
+  font-size: 7em;
+}
+
+.design-selection nav ul li:nth-child(3) {
+  grid-row: 1;
+  background-color: #31c5da;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.design-selection nav ul li:nth-child(4)::before {
+  content: "4";
+  left: 10.45em;
+  top: 5.2em;
+  font-size: 7em;
+}
+
+.design-selection nav ul li:nth-child(4) {
+  grid-row: 1;
+  background-color: #f15a30;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.design-selection nav ul li:nth-child(5)::before {
+  content: "5";
+  left: 2.5em;
+  top: 7.6em;
+  font-size: 7em;
+}
+
+.design-selection nav ul li:nth-child(5) {
+  background-color: #0d2c40;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.design-selection nav ul li:nth-child(6)::before {
+  content: "6";
+  left: 5.19em;
+  top: 7.6em;
+  font-size: 7em;
+}
+
+.design-selection nav ul li:nth-child(6) {
+  background-color: #f15a30;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.design-selection nav ul li:nth-child(7)::before {
+  content: "7";
+  left: 7.55em;
+  top: 7.6em;
+  font-size: 7em;
+}
+
+.design-selection nav ul li:nth-child(7) {
+  background-color: #31c5da;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.design-selection nav ul li:nth-child(8)::before {
+  content: "8";
+  left: 10.45em;
+  top: 7.6em;
+  font-size: 7em;
+}
+
+.design-selection nav ul li:nth-child(8) {
+  background-color: #f15a30;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.design-archives {
+  background-color: #31c5da;
+  width: 22.5%;
+  margin-left: 50%;
+  margin-right: 50%;
+  position: relative;
+  left: 7.73em;
+  height: 24em;
+}
+
+.design-archives h3 {
+  -webkit-transform: rotate(-90deg);
+  color: white;
+  position: absolute;
+  top: 40%;
+  right: 100%;
+}
+
+.design-archives nav {
+  text-decoration: none;
+  list-style: none;
+  position: absolute;
+  top: 40%;
+}
+
+.design-archives nav ul {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  list-style: none;
+  padding: 0 1em;
+}
+
+.design-archives nav ul li a {
+  color: black;
+}
+
+.zen-resources {
+  background: #31c5da url(../img/icon-circles.svg) no-repeat bottom center;
+  width: 22.5%;
+  margin-left: 50%;
+  margin-right: 50%;
+  position: relative;
+  left: 7.73em;
+  height: 37em;
+  background-size: 100%;
+}
+
+.zen-resources ul {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  list-style: none;
+  padding: 0 1em;
+}
+
+.zen-resources h3 {
+  -webkit-transform: rotate(-90deg);
+  color: white;
+  position: absolute;
+  top: 2%;
+  right: 97%;
+}
+
+.zen-resources ul li a {
+  color: black;
+}

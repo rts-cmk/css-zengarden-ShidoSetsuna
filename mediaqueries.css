@@ -1,0 +1,87 @@
+@media screen and (max-width: 1351px) {
+  aside {
+    top: 226em;
+  }
+}
+
+@media screen and (max-width: 1242px) {
+  .design-selection h3 {
+    color: white;
+    width: 8em;
+    position: absolute;
+    right: 0;
+    top: 19em;
+  }
+
+  .zen-resources,
+  .design-archives {
+    left: -0.5em;
+    width: 27.3%;
+  }
+
+  .main .requirements p:nth-child(2) {
+    grid-column: 1;
+    padding-right: 2em;
+  }
+
+  .main .requirements p:nth-child(3) {
+    grid-column: 1;
+    grid-row: 2;
+    padding-right: 2em;
+  }
+
+  .main .requirements p:nth-child(4) {
+    grid-column: 1;
+    grid-row: 3;
+    height: fit-content;
+    padding-left: 0em;
+  }
+
+  .main .requirements p:nth-child(5) {
+    grid-column: 1;
+    height: fit-content;
+    grid-row: 4;
+    padding-left: 0em;
+  }
+
+  .main .requirements p:nth-child(6) {
+    grid-column: 1;
+    height: fit-content;
+    position: relative;
+    bottom: 10%;
+    padding-left: 0em;
+  }
+
+  .main .benefits {
+    background: rgba(0, 188, 217, 0.8) url(../img/icon-circles.svg) no-repeat
+      left top;
+    background-size: 100%;
+    position: absolute;
+    right: 0%;
+    z-index: 0;
+    margin-left: 0;
+    width: 31%;
+    padding: 22em 1em 25em 1em;
+  }
+
+  .main .participation {
+    background: #f6efe5;
+    position: absolute;
+    right: 31%;
+    width: 69%;
+    margin-top: 20em;
+    padding: 1em;
+  }
+
+  .main .requirements {
+    width: 74%;
+    margin-top: 10em;
+  }
+
+  aside {
+    top: 236em;
+  }
+}
+
+@media screen and (max-width: 1070px) {
+}
